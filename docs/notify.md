@@ -15,7 +15,7 @@
 
 ```yaml
 notify:
-  enabled: false       # 总开关，如需开启改为：true
+  enabled: true       # 总开关，如需开启改为：true
   on_skip: false       # skip 是否纳入汇总，默认 false
   title_prefix: "ncmm" # 推送标题前缀，便于多机区分
   timeout: 10s
