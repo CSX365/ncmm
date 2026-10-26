@@ -58,7 +58,7 @@
 ### 启动 WebUI（推荐）
 
 ```bash
-./ncmm --home ./run web
+./ncmm web
 ```
 
 启动后访问 [http://127.0.0.1:3899](http://127.0.0.1:3899)，首次打开按页面提示设置管理员密码。详细操作见 [WebUI 使用说明](docs/webui.md)。
@@ -66,8 +66,8 @@
 ### 使用命令行
 
 ```bash
-./ncmm --home ./run login cookie 'MUSIC_U=你的Cookie值;' -m
-./ncmm --home ./run task
+./ncmm  cookie 'MUSIC_U=你的Cookie值;' -m
+./ncmm  task
 ```
 
 普通任务命令不会启动 WebUI。命令参数、独立任务和登录方式见 [命令行使用说明](docs/cli.md)。

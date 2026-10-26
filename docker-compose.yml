@@ -3,6 +3,8 @@ services:
     # build 用于本地源码构建；image 同时作为构建标签和官方镜像拉取地址。
     # build: .
     image: ghcr.io/3899/ncmm:latest
+    #ghcr.io拉取镜像出错的可以改成下面的加速镜像	
+    #image: ghcr.1ms.run/3899/ncmm:latest
     container_name: ncmm
     restart: unless-stopped
     ports:

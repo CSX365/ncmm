@@ -1,7 +1,7 @@
 # NCMM 核心配置。建议优先使用 WebUI；手动修改后需重启服务。
 # 字符串、路径和持续时间建议保留引号；布尔值仅使用 true / false。
 # 配置文件版本，由程序用于识别配置结构，请勿手动降级。
-version: 1.2.9
+version: 1.2.10
 
 # 账号与移动端凭据
 accounts:
@@ -31,7 +31,7 @@ network:
     # 默认兜底 UA；协议专用 UA 留空时可能回退到此值。
     default: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) NeteaseMusicDesktop/2.3.17.1034"
     # Web / PC 客户端 WEAPI 请求使用的 UA。
-    weapi: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+    weapi: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) NeteaseMusicDesktop/2.3.17.1034"
     # iPhone / iPad 移动端 EAPI 请求使用的抓包 UA。
     eapi: "neteasemusic/9.6.05 (iPhone; iOS 16.6.1; Scale/2.00)"
     # Android XEAPI / AEAPI 请求使用的抓包 UA；Android 推歌和领会员需要配置。
@@ -114,6 +114,14 @@ sign:
     enableShareSong: true
     # 播放日推歌曲，约需 31～45 分钟，默认关闭。
     enablePlayDailyRecommend: false
+    # 自动领取时段红包雨（每天4个时段，每时段最多6次，无风控要求）。
+    enableRedPacket: false
+    # [实验性] 自动执行刮刮乐/好运翻卡/扭蛋抽奖（仅消耗当前已有次数，需手动开启）。
+    enableLottery: false
+    # [实验性] 模拟看视频增加抽奖次数及额外领128云贝（存在广告反作弊检测风险，默认关闭）。
+    enableLotteryWatchVideo: false
+    # [实验性] 自动执行看视频赚云贝（共15阶段，每天上限约28320云贝，每次模拟8秒视频停留并上报权益，存在反作弊检测风险，默认关闭）。
+    enableWatchVideoYunbei: false
 
 # 听歌/播放类任务通用配置
 play:

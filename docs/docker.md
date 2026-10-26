@@ -18,6 +18,8 @@ Docker 镜像默认启动 WebUI 和内置定时任务调度器，访问地址为
 services:
   ncmm:
     image: ghcr.io/3899/ncmm:latest
+	#ghcr.io拉取错误的可以换为下面加速镜像
+	#image: ghcr.1ms.run/3899/ncmm:latest
     container_name: ncmm
     restart: unless-stopped
     ports:

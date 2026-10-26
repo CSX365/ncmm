@@ -11,7 +11,7 @@
 在青龙面板的 **订阅管理** 中添加订阅，或在终端直接运行以下指令：
 
 ```bash
-ql repo https://github.com/3899/ncmm.git "ncmm-" "" "" "" "py"
+ql repo https://github.com/3899/ncmm.git "ncmm-" "ncmm-withdraw-run" "" "" "py"
 ```
 
 > 💡 **国内镜像备用**：若 GitHub 连接较慢，可使用代理地址：
